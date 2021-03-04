@@ -1,0 +1,8 @@
+Bundle-Name: Logconfmf
+Bundle-Vendor: MEOWLOMO
+-dsannotations: 
+Bundle-Version: 1.0.4
+Fragment-Host: ch.qos.logback.core;bundle-version="1.0.7"
+-includeresource: lib=lib
+-runfw: org.eclipse.osgi;version='[3.13.0.v20180409-1500,3.13.0.v20180409-1500]'
+-runee: JavaSE-1.8

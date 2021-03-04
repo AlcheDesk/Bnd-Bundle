@@ -1,0 +1,23 @@
+-runfw: org.eclipse.osgi;version='[3.13.0.v20180409-1500,3.13.0.v20180409-1500]'
+-runee: JavaSE-1.8
+-buildpath: \
+	com.meowlomo.ci.ems.bundle.api;version=latest,\
+	org.eclipse.osgi,\
+	org.osgi.service.event,\
+	json,\
+	slf4j.api
+
+Import-Package: com.meowlomo.ci.ems.bundle.interfaces,\
+ com.meowlomo.ci.ems.bundle.utils,\
+ org.osgi.framework,\
+ org.osgi.service.event,\
+ org.slf4j,\
+ org.json;version="20170516.0.0"
+
+Bundle-Version: 1.0.0
+Bundle-Name: Expression
+Bundle-Vendor: MEOWLOMO
+Bundle-Activator: com.meowlomo.ci.ems.bundle.expression.Activator
+Private-Package: com.meowlomo.ci.ems.bundle.expression
+Include-Resource: lib=lib
+Bundle-ClassPath: .,lib/EvalEx-2.1.jar

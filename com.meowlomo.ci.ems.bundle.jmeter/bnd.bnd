@@ -1,0 +1,24 @@
+-buildpath: \
+	com.meowlomo.ci.ems.bundle.api;version=latest,\
+	org.eclipse.osgi,\
+	org.osgi.service.event,\
+	json,\
+	slf4j.api
+-runfw: org.eclipse.osgi;version='[3.13.0.v20180409-1500,3.13.0.v20180409-1500]'
+-runee: JavaSE-1.8
+
+Include-Resource: lib=lib
+
+Import-Package: \
+	com.meowlomo.ci.ems.bundle.interfaces,\
+	com.meowlomo.ci.ems.bundle.utils,\
+	org.osgi.framework,\
+	org.json;version=20170516.0.0,\
+	org.slf4j;version=1.7.2
+
+Bundle-Activator: com.meowlomo.ci.ems.bundle.jmeter.Activator
+Private-Package: com.meowlomo.ci.ems.bundle.jmeter
+Bundle-Name: JMeter
+Bundle-Vendor: MEOWLOMO
+Bundle-ClassPath: .,lib/dom4j-2.1.0.jar
+Bundle-Version: 1.0.0

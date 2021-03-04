@@ -1,0 +1,27 @@
+Bundle-Version: 1.0.4
+Bundle-Name: DataSource
+Bundle-Vendor: MEOWLOMO
+-buildpath: \
+	com.meowlomo.ci.ems.bundle.api;version=latest,\
+	org.eclipse.osgi,\
+	org.osgi.service.event,\
+	slf4j.api,\
+	com.zaxxer:HikariCP,\
+	json
+-runfw: org.eclipse.osgi;version='[3.13.0.v20180409-1500,3.13.0.v20180409-1500]'
+-runee: JavaSE-1.8
+-sources: false
+Include-Resource: lib=lib
+
+Import-Package: \
+	com.meowlomo.ci.ems.bundle.interfaces,\
+	com.meowlomo.ci.ems.bundle.utils,\
+	com.zaxxer.hikari,\
+	org.osgi.framework,\
+	org.osgi.service.event,\
+	org.slf4j;version=1.7.2,\
+	org.apache.commons.io,\
+	*
+Bundle-Activator: com.meowlomo.ci.ems.bundle.db.Activator
+Private-Package: com.meowlomo.ci.ems.bundle.db
+-dsannotations: 

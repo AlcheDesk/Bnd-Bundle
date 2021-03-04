@@ -1,0 +1,28 @@
+-buildpath: \
+	org.apache.commons.io,\
+	org.osgi.service.event,\
+	slf4j.api,\
+	com.meowlomo.ci.ems.bundle.api;version=latest,\
+	org.eclipse.osgi,\
+	json;version=20170516.0
+
+
+
+Bundle-Version: 1.0.4
+Bundle-Activator: com.meowlomo.ci.ems.bundle.file.Activator
+Private-Package: com.meowlomo.ci.ems.bundle.file
+Bundle-Name: File
+Bundle-Vendor: MEOWLOMO
+-runfw: org.eclipse.osgi;version='[3.13.0.v20180409-1500,3.13.0.v20180409-1500]'
+-runee: JavaSE-1.8
+-sources: false
+Import-Package: com.meowlomo.ci.ems.bundle.interfaces,\
+ com.meowlomo.ci.ems.bundle.utils,\
+ org.osgi.framework,\
+ org.slf4j,\
+ org.apache.commons.io;version="[2.0,3.0)",\
+ org.json;version="20170516.0.0"
+ 
+Private-Package: com.meowlomo.ci.ems.bundle.file
+Include-Resource: lib=lib
+Bundle-ClassPath: .,lib/bcprov-jdk15on-1.59.jar,lib/mbassador-1.3.0.jar,lib/smbj-0.7.0.jar

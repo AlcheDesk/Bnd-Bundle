@@ -1,0 +1,10 @@
+.DS_Store
+.gradle/
+generated/
+.metadata
+/cnf/local/
+/cnf/release/
+/cnf/templates/
+.recommenders/
+bin/
+osgirundir/

@@ -1,0 +1,22 @@
+-buildpath: \
+	json,\
+	org.eclipse.osgi,\
+	org.osgi.service.event,\
+	slf4j.api,\
+	com.google.gson,\
+	com.google.guava;version=26.0
+	
+-sources: false
+Bundle-Version: 1.0.5
+Bundle-Activator: com.meowlomo.ci.ems.bundle.api.Activator
+Bundle-SymbolicName: com.meowlomo.ci.ems.bundle.api
+Export-Package: \
+	com.meowlomo.ci.ems.bundle.interfaces;version=1.0.4,\
+	com.meowlomo.ci.ems.bundle.utils;version=1.0.4
+
+Private-Package: com.meowlomo.ci.ems.bundle.api
+-runfw: org.eclipse.osgi;version='[3.13.0.v20180409-1500,3.13.0.v20180409-1500]'
+-runee: JavaSE-1.8
+Bundle-Name: Api
+Bundle-Vendor: MEOWLOMO
+Require-Bundle: org.eclipse.osgi

@@ -1,0 +1,109 @@
+-runfw: org.eclipse.osgi;version='[3.13.0.v20180409-1500,3.13.0.v20180409-1500]'
+-runee: JavaSE-1.8
+-runsystemcapabilities: ${native_capability}
+
+-resolve.effective: active;skip:="osgi.service"
+
+
+
+
+-runrequires: \
+	bnd.identity;id='ch.qos.logback.classic',\
+	bnd.identity;id='ch.qos.logback.core',\
+	bnd.identity;id='ch.qos.logback.slf4j',\
+	bnd.identity;id='com.zaxxer.HikariCP',\
+	bnd.identity;id='javax.xml',\
+	bnd.identity;id='json',\
+	bnd.identity;id='org.apache.felix.gogo.command',\
+	bnd.identity;id='org.apache.felix.gogo.runtime',\
+	bnd.identity;id='org.apache.felix.gogo.shell',\
+	bnd.identity;id='org.apache.commons.codec',\
+	bnd.identity;id='org.apache.commons.io',\
+	bnd.identity;id='org.apache.commons.logging',\
+	bnd.identity;id='org.eclipse.equinox.app',\
+	bnd.identity;id='org.eclipse.equinox.common',\
+	bnd.identity;id='org.eclipse.equinox.console',\
+	bnd.identity;id='org.eclipse.equinox.event',\
+	bnd.identity;id='org.eclipse.equinox.preferences',\
+	bnd.identity;id='org.eclipse.equinox.registry',\
+	bnd.identity;id='org.eclipse.osgi.services',\
+	bnd.identity;id='org.eclipse.osgi.util',\
+	bnd.identity;id='org.eclipse.core.contenttype',\
+	bnd.identity;id='org.eclipse.core.jobs',\
+	bnd.identity;id='org.eclipse.core.runtime',\
+	bnd.identity;id='org.slf4j.api',\
+	bnd.identity;id='org.apache.httpcomponents.httpclient',\
+	bnd.identity;id='org.apache.httpcomponents.httpcore',\
+	bnd.identity;id='com.meowlomo.ci.ems.bundle.api',\
+	bnd.identity;id='com.meowlomo.ci.ems.bundle.httpclient',\
+	bnd.identity;id='com.meowlomo.ci.ems.bundle.logbackconf',\
+	bnd.identity;id='com.meowlomo.ci.ems.bundle.logbackdbdriver',\
+	bnd.identity;id='com.meowlomo.ci.ems.bundle.webapitest',\
+	bnd.identity;id='com.meowlomo.ci.ems.bundle.webdriver',\
+	bnd.identity;id='com.meowlomo.ci.ems.bundle.file',\
+	bnd.identity;id='com.meowlomo.ci.ems.bundle.console',\
+	bnd.identity;id='com.meowlomo.ci.ems.bundle.dbfragment',\
+	bnd.identity;id='com.meowlomo.ci.ems.bundle.dbdriver',\
+	bnd.identity;id='com.meowlomo.ci.ems.bundle.db',\
+	bnd.identity;id='org.eclipse.osgi'
+
+-runbundles: \
+	ch.qos.logback.classic;version='[1.0.7,1.0.8)',\
+	ch.qos.logback.core;version='[1.0.7,1.0.8)',\
+	ch.qos.logback.slf4j;version='[1.0.7,1.0.8)',\
+	org.apache.log4j;version='[1.2.15,1.2.16)',\
+	org.slf4j.api;version='[1.7.2,1.7.3)',\
+	com.zaxxer.HikariCP;version='[2.6.0,2.6.1)',\
+	javax.xml;version='[1.3.4,1.3.5)',\
+	json;version='[20170516.0.0,20170516.0.1)',\
+	org.apache.felix.gogo.runtime;version='[0.10.0,0.10.1)',\
+	org.apache.felix.gogo.shell;version='[0.10.0,0.10.1)',\
+	org.apache.felix.gogo.command;version='[0.10.0,0.10.1)',\
+	org.apache.commons.codec;version='[1.9.0,1.9.1)',\
+	org.apache.commons.io;version='[2.4.0,2.4.1)',\
+	org.apache.commons.logging;version='[1.1.1,1.1.2)',\
+	org.apache.commons.beanutils;version='[1.9.3,1.9.4)',\
+	org.apache.commons.collections;version='[3.2.2,3.2.3)',\
+	org.apache.commons.configuration;version='[2.1.1,2.1.2)',\
+	org.apache.commons.lang3;version='[3.6.0,3.6.1)',\
+	org.eclipse.equinox.console;version='[1.1.300,1.1.301)',\
+	org.eclipse.osgi.services;version='[3.6.0,3.6.1)',\
+	org.eclipse.osgi.util;version='[3.4.0,3.4.1)',\
+	org.apache.httpcomponents.httpclient;version='[4.5.2,4.5.3)',\
+	org.apache.httpcomponents.httpcore;version='[4.4.6,4.4.7)',\
+	org.eclipse.equinox.event;version='[1.4.0,1.4.1)',\
+	org.eclipse.equinox.app;version='[1.3.400,1.3.401)',\
+	org.eclipse.equinox.common;version='[3.9.0,3.9.1)',\
+	org.eclipse.core.contenttype;version='[3.6.0,3.6.1)',\
+	org.eclipse.core.jobs;version='[3.9.2,3.9.3)',\
+	org.eclipse.core.runtime;version='[3.13.0,3.13.1)',\
+	org.eclipse.equinox.preferences;version='[3.7.0,3.7.1)',\
+	org.eclipse.equinox.registry;version='[3.7.0,3.7.1)',\
+	com.meowlomo.ci.ems.bundle.api;version=snapshot,\
+	com.meowlomo.ci.ems.bundle.httpclient;version=snapshot,\
+	com.meowlomo.ci.ems.bundle.logbackconf;version=snapshot,\
+	com.meowlomo.ci.ems.bundle.logbackdbdriver;version=snapshot,\
+	com.meowlomo.ci.ems.bundle.webapitest;version=snapshot,\
+	com.meowlomo.ci.ems.bundle.webdriver;version=snapshot,\
+	com.meowlomo.ci.ems.bundle.file;version=snapshot,\
+	com.meowlomo.ci.ems.bundle.console;version=snapshot,\
+	com.meowlomo.ci.ems.bundle.db;version=snapshot,\
+	com.meowlomo.ci.ems.bundle.dbfragment;version=snapshot,\
+	com.meowlomo.ci.ems.bundle.dbdriver;version=snapshot
+
+
+
+-runproperties.eqnx: \
+	osgi.console= ,\
+	osgi.console.enable.builtin=false,\
+	org.osgi.service.http.port=18080,\
+	osgi.bundles.defaultStartLevel=1,\
+	osgi.configuration.cascaded=false,\
+	eclipse.ignoreApp=true,\
+	ds.loglevel=debug
+	
+-runblacklist: bnd.identity;id='org.eclipse.osgi'
+-runvm: -Declipse.ignoreApp=true -Dosgi.noShutdown=true
+-runprogramargs: -consoleLog -console
+
+-runstorage:osgirundir

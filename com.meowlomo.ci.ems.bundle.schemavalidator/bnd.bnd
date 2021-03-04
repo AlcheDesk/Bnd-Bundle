@@ -1,0 +1,28 @@
+Bundle-Version: 1.0.1
+-dsannotations: 
+Bundle-Name: Schemavalidator
+Bundle-Vendor: Meowlomo
+-runfw: org.eclipse.osgi;version='[3.13.0.v20180409-1500,3.13.0.v20180409-1500]'
+-runee: JavaSE-1.8
+-buildpath: \
+	slf4j.api,\
+	com.meowlomo.ci.ems.bundle.api;version=latest,\
+	org.osgi.service.event,\
+	org.eclipse.osgi
+	
+-sources: false
+	
+Import-Package: org.osgi.framework,\
+ org.osgi.service.event,\
+ com.meowlomo.ci.ems.bundle.interfaces,\
+ org.slf4j
+ 
+Private-Package: com.meowlomo.ci.ems.bundle.schemavalidator
+ 
+Include-Resource: lib=lib
+Bundle-ClassPath: .,lib/activation-1.1.jar,lib/btf-1.2.jar,\
+ lib/guava-16.0.1.jar,lib/jackson-annotations-2.2.3.jar,lib/jackson-core-2.2.3.jar,\
+ lib/jackson-databind-2.2.3.jar,lib/joda-time-2.9.7.jar,lib/jopt-simple-5.0.3.jar,\
+ lib/json-schema-core-1.2.8.jar,lib/json-schema-validator-2.2.8.jar,lib/jsr305-3.0.1.jar,\
+ lib/rhino-1.7.9.jar,lib/libphonenumber-8.0.0.jar,lib/mailapi-1.4.3.jar,\
+ lib/msg-simple-1.1.jar,lib/uri-template-0.9.jar,lib/jackson-coreutils-1.8.jar

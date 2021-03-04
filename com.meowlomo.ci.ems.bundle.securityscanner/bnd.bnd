@@ -1,0 +1,10 @@
+-buildpath: \
+	org.eclipse.osgi,\
+	com.meowlomo.ci.ems.bundle.api;version=latest,\
+	slf4j.api
+Bundle-Name: Securityscanner
+Bundle-Vendor: MEOWLOMO
+-runfw: org.eclipse.osgi;version='[3.13.0.v20180409-1500,3.13.0.v20180409-1500]'
+-runee: JavaSE-1.8
+Bundle-Version: 1.5
+Bundle-Activator: com.meowlomo.ci.ems.bundle.scanner.Activator
