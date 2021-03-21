@@ -1,7 +1,10 @@
-<h1><img src="http://enroute.osgi.org/img/enroute-logo-64.png" witdh=40px style="float:left;margin: 0 1em 1em 0;width:40px">
-OSGi enRoute Archetype</h1>
+# What is this Repo?
 
-This repository represents a template workspace for bndtools, it is the easiest way to get started with OSGi enRoute. The workspace is useful in an IDE (bndtools or Intellij) and has support for [continuous integration][2] with [gradle][3]. If you want to get started with enRoute, then follow the steps in the [quick-start guide][1].
+This repository is the home for the sources of some useful Bndtools Project Templates. These are provided as bundles which you can include in your workspace to add new project templates.
+
+# How do I use these?
+
+You can add the template bundles to any repository in your workspace, but if you use the [Bndtools Workspace Template](https://github.com/bndtools/workspace) then they're included by default.
 
 以上是BndTools生成的项目的原始自述<br>
 以下是关于此项目的Meowlomo的说明<br>
@@ -14,7 +17,7 @@ This repository represents a template workspace for bndtools, it is the easiest 
 6.OSGi环境调试一般可以使用com.meowlomo.ci.ems.bundle.console项目的run.bndrun来运行（但不保证总是可用）<br>
 7.每个bnd bundle项目需要编辑项目下的bnd.bnd来保证bndtools生成合适的满足OSGi规范的bundle(jar文件形式存在),这是作为使用者与学习者需要自行来掌握的部分,此处不再展开详述<br>
 
-[1]: http://enroute.osgi.org/quick-start.html
+[1]: https://enroute.osgi.org/tutorial/020-tutorial_qs.html
 [2]: http://enroute.osgi.org/tutorial_base/800-ci.html
 [3]: https://www.gradle.org/
 [4]: https://mvnrepository.com/
